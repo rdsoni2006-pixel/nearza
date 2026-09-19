@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist | Nearza</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">N</span>
+                <span class="logo-text">Nearza</span>
+            </a>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for products...">
+                <button class="search-button">🔍</button>
+            </div>
+            <a href="../account.html" class="account-button">
+                <span class="account-icon">👤</span>
+                <span class="account-content"><small>Hello,</small><strong>Account</strong></span>
+            </a>
+            <a href="cart.html" class="cart-button">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-text">Cart</span>
+                <span class="cart-count">0</span>
+            </a>
+            <a href="orders.html" class="orders-link">Orders</a>
+        </div>
+    </header>
+
+    <main class="wishlist-page">
+        <div class="wishlist-header">
+            <span class="section-label">SAVED FOR LATER</span>
+            <h1>Wishlist</h1>
+            <p>Keep the products you want to revisit close at hand.</p>
+        </div>
+        <section class="wishlist-section">
+            <div id="wishlist-grid" class="product-grid"></div>
+        </section>
+    </main>
+
+    <script src="../businesses.js"></script>
+    <script src="../availability.js"></script>
+    <script src="../script.js"></script>
+    <script src="wishlist.js"></script>
+</body>
+</html>

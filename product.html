@@ -1,0 +1,415 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        >
+
+        <title>  Product Page | Nearza</title>
+
+        <link
+            rel="stylesheet"
+            href="style.css"
+        >
+
+    </head>
+
+
+    <body>
+        
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div class="header-container">
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+
+                    <span class="logo-icon">
+                        N
+                    </span>
+
+                    <span class="logo-text">
+                        Nearza
+                    </span>
+
+                </a>
+
+
+                <div class="search-container">
+
+                    <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Search for products..."
+                    >
+
+                    <button
+                        class="search-button"
+                    >
+                        🔍
+                    </button>
+
+                </div>
+
+
+                <a
+                    href="pages/cart.html"
+                    class="cart-button"
+                >
+
+                    <span class="cart-icon">
+                        🛒
+                    </span>
+
+                    <span class="cart-text">
+                        Cart
+                    </span>
+
+                    <span class="cart-count">
+                        0
+                    </span>
+
+                </a>
+
+                <a href="pages/orders.html" class="orders-link">
+                    Orders
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!-- PRODUCT PAGE -->
+
+        <main class="product-page">
+
+            <!-- Breadcrumb -->
+
+            <div class="product-breadcrumb">
+
+                <a href="pages/products.html">
+                    Products
+                </a>
+
+                <span>
+                    /
+                </span>
+
+                <span>
+                    Product Details
+                </span>
+
+            </div>
+
+
+            <!-- Product Details -->
+
+            <section
+                id="product-details"
+                class="product-details"
+            >
+
+                <!-- JavaScript will insert the product here -->
+
+            </section>
+
+
+            <!-- Product Information -->
+
+                       <!-- Product Information -->
+
+            <section class="product-information">
+
+                <h2>
+                    Product Information
+                </h2>
+
+                <p>
+                    Shop locally through Nearza and get your
+                    products delivered quickly from nearby sellers.
+                </p>
+
+            </section>
+                          <!-- Related Products -->
+
+            <section class="related-products" id="related-products">
+
+                <h2>You may also like</h2>
+
+                <div class="product-grid" id="related-products-grid">
+                    <!-- JavaScript will insert related products here -->
+                </div>
+
+            </section>
+
+            <section class="related-products recently-viewed-section" id="recently-viewed-section">
+                <h2>Recently viewed</h2>
+                <div class="product-grid" id="recently-viewed-grid"></div>
+            </section>
+
+            <!-- Reviews & Ratings -->
+
+            <section class="reviews-section" id="reviews-section">
+
+                <div class="reviews-header">
+
+                    <h2>Reviews & Ratings</h2>
+
+                    <div class="reviews-summary" id="reviews-summary">
+                        <!-- JavaScript will insert average rating here -->
+                    </div>
+
+                </div>
+
+                <div class="reviews-list" id="reviews-list">
+                    <!-- JavaScript will insert review cards here -->
+                </div>
+
+                <div class="review-form-card">
+
+                    <h3>Write a review</h3>
+
+                    <form id="review-form">
+
+                        <div class="review-form-row">
+
+                            <div class="form-group">
+                                <label for="review-name">Your name</label>
+                                <input
+                                    type="text"
+                                    id="review-name"
+                                    placeholder="Enter your name"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="review-rating">Rating</label>
+                                <select id="review-rating" required>
+                                    <option value="">Select rating</option>
+                                    <option value="5">⭐⭐⭐⭐⭐ (5)</option>
+                                    <option value="4">⭐⭐⭐⭐ (4)</option>
+                                    <option value="3">⭐⭐⭐ (3)</option>
+                                    <option value="2">⭐⭐ (2)</option>
+                                    <option value="1">⭐ (1)</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group form-group-full">
+                            <label for="review-text">Your review</label>
+                            <textarea
+                                id="review-text"
+                                rows="3"
+                                placeholder="Share your experience with this product"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-review-button">
+                            Submit Review
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+               
+           
+             
+                <a id="seller-card-link" class="seller-card-link">
+                <section class="seller-information">
+
+    <div class="seller-header">
+        <div class="seller-icon">🏪</div>
+
+        <div>
+            <p class="seller-label">SOLD BY</p>
+            <h2 id="seller-name"></h2>
+            <p class="seller-location" id="seller-location"></p>
+            <span class="seller-view-link">View Store →</span>
+        </div>
+    </div>
+
+    <div class="local-seller-details">
+
+        <div class="local-seller-detail">
+            <span>⭐</span>
+            <div>
+                <strong id="seller-rating"></strong>
+                <p>Store rating</p>
+            </div>
+        </div>
+
+        <div class="local-seller-detail">
+            <span>⚡</span>
+            <div>
+                <strong id="seller-delivery-label"></strong>
+                <p id="seller-delivery-time"></p>
+            </div>
+        </div>
+
+        <div class="local-seller-detail">
+            <span>✓</span>
+            <div>
+                <strong id="seller-verified-label"></strong>
+                <p id="seller-verified-description"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="local-seller-hours">
+        <span>🕘</span>
+        <span>Open today: <strong id="seller-hours"></strong></span>
+    </div>
+
+            </div>
+
+            </section>
+            </a>
+            <!-- Delivery Information -->
+
+            <section class="delivery-information">
+
+                <h2>
+                    Fast Local Delivery
+                </h2>
+
+                <div class="delivery-features">
+
+                    <div class="delivery-feature">
+
+                        <span>
+                            🚚
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Quick Delivery
+                            </h3>
+
+                            <p>
+                                Get your order delivered in
+                                1–2 hours.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="delivery-feature">
+
+                        <span>
+                            📍
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Local Sellers
+                            </h3>
+
+                            <p>
+                                Products are sourced from
+                                nearby stores.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="delivery-feature">
+
+                        <span>
+                            🛍️
+                        </span>
+
+                        <div>
+
+                            <h3>
+                                Easy Shopping
+                            </h3>
+
+                            <p>
+                                Find what you need without
+                                searching multiple stores.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+
+            <div class="footer-container">
+
+                <div class="footer-brand">
+
+                    <h2>
+                        Nearza
+                    </h2>
+
+                    <p>
+                        Your local marketplace.
+                        Delivered fast.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <a href="index.html">
+                        Home
+                    </a>
+
+                    <a href="pages/products.html">
+                        Products
+                    </a>
+
+                    <a href="pages/cart.html">
+                        Cart
+                    </a>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+            
+            <script src="businesses.js"></script>
+            <script src="availability.js"></script>
+            <script src="script.js"></script>
+
+
+    </body>
+
+    </html>

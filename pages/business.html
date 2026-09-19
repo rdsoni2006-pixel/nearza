@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Business | Nearza</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-container">
+
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">N</span>
+                <span class="logo-text">Nearza</span>
+            </a>
+
+            <div class="search-container">
+                <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Search for products..."
+                >
+
+                <button class="search-button">🔍</button>
+            </div>
+
+            <a href="cart.html" class="cart-button">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-text">Cart</span>
+                <span class="cart-count">0</span>
+            </a>
+
+            <a href="orders.html" class="orders-link">
+                Orders
+            </a>
+
+        </div>
+    </header>
+
+    <main class="business-page">
+
+        <div class="business-breadcrumb">
+            <a href="products.html">Products</a>
+            <span>/</span>
+            <span>Business</span>
+        </div>
+
+        <section class="business-profile" id="business-profile">
+            <div class="business-profile-header">
+                <div class="seller-icon">🏪</div>
+                <div>
+                    <p class="seller-label">LOCAL BUSINESS</p>
+                    <h1 id="business-name"></h1>
+                    <p id="business-type"></p>
+                    <div class="business-profile-badges">
+                        <span class="business-verified-badge" id="business-verified"></span>
+                        <span class="business-status" id="business-status" aria-live="polite"></span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="business-description" id="business-description"></p>
+
+            <div class="business-details-grid">
+                <div class="business-detail">
+                    <span>📍</span>
+                    <div>
+                        <strong id="business-city"></strong>
+                        <p id="business-location"></p>
+                    </div>
+                </div>
+
+                <div class="business-detail">
+                    <span>⭐</span>
+                    <div>
+                        <strong id="business-rating"></strong>
+                        <p>Store rating</p>
+                    </div>
+                </div>
+
+                <div class="business-detail">
+                    <span>📏</span>
+                    <div>
+                        <strong id="business-distance"></strong>
+                        <p>Distance from you</p>
+                    </div>
+                </div>
+
+                <div class="business-detail">
+                    <span>🕘</span>
+                    <div>
+                        <strong id="business-open-label">Store hours</strong>
+                        <p id="business-hours"></p>
+                    </div>
+                </div>
+
+                <div class="business-detail">
+                    <span>🛍️</span>
+                    <div>
+                        <strong id="business-product-count"></strong>
+                        <p>Products available</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="business-products-section">
+            <div class="section-header">
+                <div>
+                    <span class="section-label">AVAILABLE FROM THIS BUSINESS</span>
+                    <h2 id="business-products-heading">Products</h2>
+                    <p class="business-products-count" id="business-products-count"></p>
+                </div>
+            </div>
+
+            <div class="product-grid" id="business-products-container"></div>
+        </section>
+
+    </main>
+
+    <script src="../businesses.js"></script>
+    <script src="../availability.js"></script>
+    <script src="../script.js"></script>
+
+</body>
+
+</html>

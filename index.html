@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearza — Everything Near You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+     <header class="header">
+
+         <div class="header-container">
+
+        <!-- LOGO -->
+        <a href="index.html" class="logo">
+            <span class="logo-icon">N</span>
+            <span class="logo-text">Nearza</span>
+        </a>
+
+
+        <!-- LOCATION -->
+        <button class="location-selector">
+            <span class="location-icon">📍</span>
+
+            <span class="location-content">
+                <small>Deliver to</small>
+                <strong>Ludhiana</strong>
+            </span>
+
+            <span class="location-arrow">⌄</span>
+        </button>
+
+
+        <!-- SEARCH -->
+        <div class="search-container">
+
+            <input
+                type="text"
+                class="search-input"
+                placeholder="Search for products..."
+            >
+
+            <button class="search-button">
+                🔍
+            </button>
+
+        </div>
+
+
+        <!-- ACCOUNT -->
+        <a href="account.html" class="account-button">
+
+            <span class="account-icon">👤</span>
+
+            <span class="account-content">
+                <small>Hello,</small>
+                <strong>Account</strong>
+            </span>
+
+        </a>
+
+
+        <!-- CART -->
+        <a href="pages/cart.html" class="cart-button">
+
+            <span class="cart-icon">🛒</span>
+
+            <span class="cart-text">Cart</span>
+
+            <span class="cart-count">0</span>
+
+        </a>
+
+        <a href="pages/orders.html" class="orders-link">
+            Orders
+        </a>
+
+          </div>
+
+     </header>
+    <!-- MAIN CONTENT -->
+    <main>
+             <!-- HERO SECTION -->
+               <section class="hero">
+
+                     <div class="hero-content">
+
+                           <span class="hero-label">
+                             LOCAL BEAUTY • FAST DELIVERY
+                            </span>
+
+                           <h1>
+                             Beauty products,
+                             <br>
+                              <span>near you.</span>
+                           </h1>
+
+                              <p>
+                                  Discover beauty products from trusted stores in your city
+                                    and get them delivered to your doorstep in 1–2 hours.
+                             </p>
+
+                       <div class="hero-actions">
+
+                         <a href="pages/products.html" class="hero-button">
+                             Shop Beauty
+                         </a>
+
+                          <a href="#categories" class="hero-secondary-button">
+                           Explore Categories
+                                 </a>
+
+                      </div>
+
+                            <div class="hero-features">
+
+                               <div class="hero-feature">
+                                   <strong>1–2 hrs</strong>
+                                   <span>Fast delivery</span>
+                                </div>
+
+                                <div class="hero-feature">
+                                    <strong>Local</strong>
+                                    <span>Trusted stores</span>
+                                </div>
+
+                             <div class="hero-feature">
+                                   <strong>100%</strong>
+                                  <span>Genuine products</span>
+                                  </div>
+
+                                        </div>
+
+                            </div>
+
+
+                           <div class="hero-visual">
+
+                             <div class="hero-card">
+
+                                 <span class="hero-card-badge">
+                                    ⚡ Nearza Fast
+                                 </span>
+
+                         <div class="hero-product-placeholder">
+                            BEAUTY
+                        </div>
+
+                            <div class="hero-card-info">
+                         <strong>Beauty essentials</strong>
+                           <span>Delivered near you</span>
+                        </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+        <!-- CATEGORIES -->
+        <!-- CATEGORIES -->
+<section class="categories" id="categories">
+
+    <div class="section-header">
+
+        <div>
+            <span class="section-label">SHOP BY CATEGORY</span>
+
+            <h2>What are you looking for?</h2>
+        </div>
+
+        <a href="pages/products.html" class="view-all">
+            View all →
+        </a>
+
+    </div>
+
+
+    <div class="category-grid">
+
+        <!-- SKINCARE -->
+        <a href="pages/products.html?category=skincare" class="category-card">
+
+            <div class="category-image">
+                 <img src="images/categories/skincare.jpg" alt="Skincare products">
+            </div>
+
+            <div class="category-info">
+                <h3>Skincare</h3>
+                <p>Care for your skin</p>
+            </div>
+
+        </a>
+
+
+        <!-- MAKEUP -->
+        <a href="pages/products.html?category=makeup" class="category-card">
+
+            <div class="category-image">
+               <img src="images/categories/makeup.jpg" alt="Makeup products">
+            </div>
+
+            <div class="category-info">
+                <h3>Makeup</h3>
+                <p>Look your best</p>
+            </div>
+
+        </a>
+
+
+        <!-- HAIRCARE -->
+        <a href="pages/products.html?category=haircare" class="category-card">
+
+            <div class="category-image">
+                <img src="images/categories/haircare.jpg" alt="Haircare products">
+            </div>
+
+            <div class="category-info">
+                <h3>Haircare</h3>
+                <p>Healthy, beautiful hair</p>
+            </div>
+
+        </a>
+
+
+        <!-- FRAGRANCE -->
+        <a href="pages/products.html?category=fragrance" class="category-card">
+
+            <div class="category-image">
+                <img src="images/categories/fragrance.jpg" alt="Fragrance products">
+            </div>
+
+            <div class="category-info">
+                <h3>Fragrance</h3>
+                <p>Find your signature scent</p>
+            </div>
+
+        </a>
+
+
+        <!-- GROOMING -->
+        <a href="pages/products.html?category=grooming" class="category-card">
+
+            <div class="category-image">
+                <img src="images/categories/grooming.jpg" alt="Grooming products">
+            </div>
+
+            <div class="category-info">
+                <h3>Grooming</h3>
+                <p>Everyday essentials</p>
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+        <!-- BUSINESSES NEAR YOU -->
+<section class="business-discovery" aria-labelledby="business-discovery-title">
+
+    <div class="section-header">
+
+        <div>
+            <span class="section-label">LOCAL BUSINESSES</span>
+
+            <h2 id="business-discovery-title">Businesses Near You</h2>
+
+            <p class="section-description">
+                Shop from trusted local businesses around you.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="business-grid" id="homepage-businesses"></div>
+
+</section>
+        <!-- POPULAR PRODUCTS -->
+<section class="products-section">
+
+    <div class="section-header">
+
+        <div>
+            <span class="section-label">POPULAR NEAR YOU</span>
+
+            <h2>Beauty essentials, delivered fast</h2>
+
+            <p class="section-description">
+                Popular products available from stores in your city.
+            </p>
+        </div>
+
+        <a href="pages/products.html" class="view-all">
+            View all →
+        </a>
+
+    </div>
+
+
+    <div class="product-grid">
+
+
+        <!-- PRODUCT 1 -->
+        <article class="product-card" data-product-id="1" tabindex="0" role="link">
+
+
+            <div class="product-image">
+
+                <span class="delivery-badge">
+                    ⚡ 1–2 hrs
+                </span>
+
+              <img src="images/product/face-wash.jpg" alt="Vitamin C Face Serum">
+
+            </div>
+
+            <div class="product-details">
+
+                <span class="product-category">
+                    Skincare
+                </span>
+
+                <h3>Vitamin C Face Serum</h3>
+
+                <p class="product-description">
+                    Brightening vitamin C serum
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹299
+                    </strong>
+
+                    <button class="add-cart">
+                        Add +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <!-- PRODUCT 5 -->
+        <article class="product-card" data-product-id="5" tabindex="0" role="link">
+
+            <div class="product-image">
+
+                <span class="delivery-badge">
+                    ⚡ 1–2 hrs
+                </span>
+
+                <img src="images/product/shampoo.webp" alt="Nourishing Hair Conditioner">
+
+            </div>
+
+            <div class="product-details">
+
+                <span class="product-category">
+                    Haircare
+                </span>
+
+                <h3>Nourishing Hair Conditioner</h3>
+
+                <p class="product-description">
+                    Softening daily hair care
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹329
+                    </strong>
+
+                    <button class="add-cart">
+                        Add +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 2 -->
+        <article class="product-card" data-product-id="2" tabindex="0" role="link">
+
+            <div class="product-image">
+
+                <span class="delivery-badge">
+                    ⚡ 1–2 hrs
+                </span>
+              <img src="images/product/moisturizer.jpg" alt="Hydrating Moisturizer">
+            </div>
+
+            <div class="product-details">
+
+                <span class="product-category">
+                    Skincare
+                </span>
+
+                <h3>Hydrating Moisturizer</h3>
+
+                <p class="product-description">
+                    Lightweight daily moisturizer
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹449
+                    </strong>
+
+                    <button class="add-cart">
+                        Add +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+            <!-- PRODUCT 3 -->
+<article class="product-card" data-product-id="3" tabindex="0" role="link">
+
+    <div class="product-image">
+
+        <span class="delivery-badge">
+            ⚡ 1–2 hrs
+        </span>
+                     <img src="images/product/sunscreen.jpg" alt="Daily Sunscreen SPF 50">
+
+    </div>
+
+
+    <div class="product-details">
+
+        <span class="product-category">
+            Skincare
+        </span>
+
+        <h3>Daily Sunscreen SPF 50</h3>
+
+        <p class="product-description">
+            Lightweight UV protection
+        </p>
+
+        <div class="product-bottom">
+            
+            <strong class="product-price">
+                ₹599
+            </strong>
+
+            <button class="add-cart">
+                Add +
+            </button>
+
+        </div>
+
+    </div>
+
+</article>
+
+        <!-- PRODUCT 4 -->
+        <article class="product-card" data-product-id="4" tabindex="0" role="link">
+
+            <div class="product-image">
+
+                <span class="delivery-badge">
+                    ⚡ 1–2 hrs
+                </span>
+
+                <img src="images/product/shampoo.webp" alt="Daily Care Shampoo">
+
+            </div>
+
+            <div class="product-details">
+
+                <span class="product-category">
+                    Haircare
+                </span>
+
+                <h3>Daily Care Shampoo</h3>
+
+                <p class="product-description">
+                    Gentle everyday hair care
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong class="product-price">
+                        ₹379
+                    </strong>
+
+                    <button class="add-cart">
+                        Add +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+       <!-- WHY NEARZA -->
+<section class="why-nearza">
+
+    <div class="section-header centered">
+
+        <span class="section-label">WHY NEARZA</span>
+
+        <h2>Why wait for days?</h2>
+
+        <p class="section-description">
+            Your favorite products are already in stores near you.
+            We simply make them easier to discover and faster to receive.
+        </p>
+
+    </div>
+
+
+    <div class="benefits-grid">
+
+
+        <!-- BENEFIT 1 -->
+        <div class="benefit-card">
+
+            <div class="benefit-icon">
+                ⚡
+            </div>
+
+            <h3>Delivered in 1–2 hours</h3>
+
+            <p>
+                Get beauty essentials from nearby stores without
+                waiting several days for delivery.
+            </p>
+
+        </div>
+
+
+        <!-- BENEFIT 2 -->
+        <div class="benefit-card">
+
+            <div class="benefit-icon">
+                📍
+            </div>
+
+            <h3>Stores near you</h3>
+
+            <p>
+                Shop products from selected local stores serving
+                your city.
+            </p>
+
+        </div>
+
+
+        <!-- BENEFIT 3 -->
+        <div class="benefit-card">
+
+            <div class="benefit-icon">
+                ✓
+            </div>
+
+            <h3>Trusted products</h3>
+
+            <p>
+                Products come from verified local sellers instead
+                of unknown sources.
+            </p>
+
+        </div>
+
+
+        <!-- BENEFIT 4 -->
+        <div class="benefit-card">
+
+            <div class="benefit-icon">
+                🛍
+            </div>
+
+            <h3>Everything near you</h3>
+
+            <p>
+                Today beauty. Tomorrow electronics, fashion,
+                home, sports and much more.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+    </main>
+   <!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- BRAND -->
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">N</span>
+                <span class="logo-text">Nearza</span>
+            </a>
+
+            <p>
+                Everything near you.
+                Delivered fast.
+            </p>
+
+        </div>
+
+
+        <!-- SHOP -->
+        <div class="footer-column">
+
+            <h3>Shop</h3>
+
+            <a href="pages/products.html">All Products</a>
+            <a href="pages/products.html?category=skincare">Skincare</a>
+            <a href="pages/products.html?category=makeup">Makeup</a>
+            <a href="pages/products.html?category=haircare">Haircare</a>
+            <a href="pages/products.html?category=fragrance">Fragrance</a>
+
+        </div>
+
+
+        <!-- NEARZA -->
+        <div class="footer-column">
+
+            <h3>Nearza</h3>
+
+            <a href="#">About Us</a>
+            <a href="#">How It Works</a>
+            <a href="#">Become a Seller</a>
+            <a href="#">Become a Delivery Partner</a>
+
+        </div>
+
+
+        <!-- HELP -->
+        <div class="footer-column">
+
+            <h3>Help</h3>
+
+            <a href="#">Contact Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Returns & Refunds</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER BOTTOM -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Nearza. All rights reserved.
+        </p>
+
+        <p>
+            Your city. Your stores. Your products.
+        </p>
+
+    </div>
+
+</footer>
+    <script src="businesses.js"></script>
+    <script src="availability.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

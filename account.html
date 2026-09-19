@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account | Nearza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">N</span>
+                <span class="logo-text">Nearza</span>
+            </a>
+
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for products...">
+                <button class="search-button">🔍</button>
+            </div>
+
+            <a href="pages/cart.html" class="cart-button">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-text">Cart</span>
+                <span class="cart-count">0</span>
+            </a>
+
+            <a href="pages/orders.html" class="orders-link">Orders</a>
+        </div>
+    </header>
+
+    <main class="account-page">
+        <div class="account-shell">
+            <aside class="account-sidebar">
+                <div class="account-card">
+                    <span class="section-label">MY ACCOUNT</span>
+                    <h1 style="margin-top: 10px;">Welcome</h1>
+
+                    <div class="account-nav">
+                        <a href="#profile-section"><span>Profile</span><span>→</span></a>
+                        <a href="#addresses-section"><span>Saved Addresses</span><span>→</span></a>
+                        <a href="pages/wishlist.html"><span>Wishlist</span><span>→</span></a>
+                        <a href="pages/orders.html"><span>Orders</span><span>→</span></a>
+                        <a href="pages/cart.html"><span>Cart</span><span>→</span></a>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="account-main">
+                <section id="profile-section" class="account-card">
+                    <div class="account-section-header">
+                        <div>
+                            <span class="section-label">PROFILE</span>
+                            <h2 style="margin-top: 8px;">Customer details</h2>
+                        </div>
+                    </div>
+
+                    <form id="account-profile-form">
+                        <div class="account-form-grid">
+                            <div class="form-group">
+                                <label for="account-name">Full name</label>
+                                <input id="account-name" type="text" placeholder="Enter your name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="account-phone">Phone number</label>
+                                <input id="account-phone" type="tel" placeholder="Enter your phone number">
+                            </div>
+
+                            <div class="form-group" style="grid-column: 1 / -1;">
+                                <label for="account-email">Email</label>
+                                <input id="account-email" type="email" placeholder="Enter your email address">
+                            </div>
+                        </div>
+
+                        <div class="account-form-actions">
+                            <button type="submit" class="nearza-button">Save profile</button>
+                            <button type="button" class="secondary-button" id="account-reset-button">Reset</button>
+                        </div>
+
+                        <div id="profile-status" class="account-status" aria-live="polite"></div>
+                        <div id="profile-error" class="form-error" aria-live="polite"></div>
+                    </form>
+                </section>
+
+                <section id="addresses-section" class="account-card">
+                    <div class="account-section-header">
+                        <div>
+                            <span class="section-label">ADDRESSES</span>
+                            <h2 style="margin-top: 8px;">Saved addresses</h2>
+                        </div>
+                    </div>
+
+                    <div id="saved-addresses-panel" class="saved-address-list"></div>
+
+                    <form id="address-form" style="margin-top: 20px;">
+                        <div class="address-form-grid">
+                            <div class="form-group">
+                                <label for="address-label">Label</label>
+                                <input id="address-label" type="text" placeholder="Home / Office / Other">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address-full-name">Full name</label>
+                                <input id="address-full-name" type="text" placeholder="Recipient name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address-phone">Phone number</label>
+                                <input id="address-phone" type="tel" placeholder="Phone number">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address-city">City</label>
+                                <input id="address-city" type="text" placeholder="City">
+                            </div>
+
+                            <div class="form-group" style="grid-column: 1 / -1;">
+                                <label for="address-line">Address</label>
+                                <textarea id="address-line" rows="3" placeholder="House / flat number, street, area"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address-landmark">Landmark (optional)</label>
+                                <input id="address-landmark" type="text" placeholder="Near metro station / landmark">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address-pincode">Pincode</label>
+                                <input id="address-pincode" type="text" placeholder="6-digit pincode">
+                            </div>
+                        </div>
+
+                        <div class="account-form-actions">
+                            <button type="submit" class="nearza-button">Save address</button>
+                            <button type="button" class="secondary-button" id="address-reset-button">Clear form</button>
+                        </div>
+
+                        <div id="address-status" class="account-status" aria-live="polite"></div>
+                        <div id="address-error" class="form-error" aria-live="polite"></div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="account.js"></script>
+</body>
+</html>

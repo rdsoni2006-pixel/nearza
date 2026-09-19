@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout — Nearza</title>
+
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+    <header class="header">
+
+    <div class="header-container">
+
+        <!-- LOGO -->
+        <a href="../index.html" class="logo">
+            <span class="logo-icon">N</span>
+            <span class="logo-text">Nearza</span>
+        </a>
+
+
+        <!-- LOCATION -->
+        <button class="location-selector">
+
+            <span class="location-icon">📍</span>
+
+            <span class="location-content">
+                <small>Deliver to</small>
+                <strong>Ludhiana</strong>
+            </span>
+
+            <span class="location-arrow">⌄</span>
+
+        </button>
+
+
+        <!-- SEARCH -->
+        <div class="search-container">
+
+            <input
+                type="text"
+                class="search-input"
+                placeholder="Search for products..."
+            >
+
+            <button class="search-button">
+                🔍
+            </button>
+
+        </div>
+
+
+        <!-- ACCOUNT -->
+        <a href="../account.html" class="account-button">
+
+            <span class="account-icon">👤</span>
+
+            <span class="account-content">
+                <small>Hello,</small>
+                <strong>Account</strong>
+            </span>
+
+        </a>
+
+
+        <!-- CART -->
+        <a href="cart.html" class="cart-button">
+
+            <span class="cart-icon">🛒</span>
+
+            <span class="cart-text">Cart</span>
+
+            <span class="cart-count">0</span>
+
+        </a>
+
+        <a href="orders.html" class="orders-link">
+            Orders
+        </a>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="checkout-page">
+
+        <div class="checkout-container">
+
+            <!-- PAGE HEADER -->
+            <div class="checkout-header">
+
+                <span class="section-label">
+                    SECURE CHECKOUT
+                </span>
+
+                <h1>Checkout</h1>
+
+                <p>
+                    Complete your details and we'll find the best
+                    local seller for your order.
+                </p>
+
+            </div>
+
+
+            <div class="checkout-layout">
+
+
+                <!-- LEFT SIDE -->
+                <div class="checkout-main">
+
+
+                    <!-- RECIPIENT -->
+                    <div class="checkout-card">
+
+                        <div class="checkout-card-header">
+
+                            <span class="checkout-step">
+                                1
+                            </span>
+
+                            <div>
+                                <h2>Who are you ordering for?</h2>
+
+                                <p>
+                                    Choose the person receiving this order.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="recipient-options">
+
+                            <label class="recipient-option">
+
+                                <input
+                                    type="radio"
+                                    name="recipient"
+                                    value="myself"
+                                    checked
+                                >
+
+                                <div class="recipient-content">
+
+                                    <strong>Myself</strong>
+
+                                    <span>
+                                        I'll receive the order
+                                    </span>
+
+                                </div>
+
+                            </label>
+
+
+                            <label class="recipient-option">
+
+                                <input
+                                    type="radio"
+                                    name="recipient"
+                                    value="someone-else"
+                                >
+
+                                <div class="recipient-content">
+
+                                    <strong>Someone else</strong>
+
+                                    <span>
+                                        I'm sending this order to another person
+                                    </span>
+
+                                </div>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DELIVERY DETAILS -->
+                    <div class="checkout-card">
+
+                        <div class="checkout-card-header">
+
+                            <span class="checkout-step">
+                                2
+                            </span>
+
+                            <div>
+                                <h2>Delivery details</h2>
+
+                                <p>
+                                    Where should we deliver your order?
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+                           <div class="form-group">
+    <label for="full-name">Full name</label>
+    <input type="text" id="full-name" placeholder="Enter full name">
+</div>
+
+<div class="form-group">
+    <label for="phone">Phone number</label>
+    <input type="tel" id="phone" placeholder="Enter phone number">
+</div>
+
+<div class="form-group form-group-full">
+    <label for="address">
+        Complete address <span class="required">*</span>
+    </label>
+
+    <textarea
+        id="address"
+        rows="3"
+        placeholder="House / flat number, street, area"
+        required
+    ></textarea>
+</div>
+
+                            <div class="form-group form-group-full">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="save-address-to-account">
+                                    Save this address to my account
+                                </label>
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="city">
+                                    City
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="city"
+                                    value="Ludhiana"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="pincode">
+                                    Pincode
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="pincode"
+                                    placeholder="Enter pincode"
+                                >
+
+                            </div>
+
+                        </div>
+
+                        <div class="checkout-card saved-address-card" id="saved-addresses-card">
+                            <div class="checkout-card-header">
+                                <span class="checkout-step">3</span>
+                                <div>
+                                    <h2>Saved addresses</h2>
+                                    <p>Choose a saved address or add a new one.</p>
+                                </div>
+                            </div>
+
+                            <div id="saved-addresses-list" class="saved-address-list"></div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- SELLER SELECTION -->
+                    <div class="checkout-card">
+
+                        <div class="checkout-card-header">
+
+                            <span class="checkout-step">
+                                3
+                            </span>
+
+                            <div>
+                                <h2>Find a local seller</h2>
+
+                                <p>
+                                    We'll find an eligible store near you
+                                    that can fulfil your order quickly.
+                                </p>
+                            </div>
+
+                        </div>
+
+                     <div class="seller-info">
+    <div class="seller-info-icon">📍</div>
+
+    <div>
+        <strong>Local seller matching</strong>
+
+        <p>
+            We'll check availability, distance
+            and delivery speed before confirming
+            your seller.
+        </p>
+    </div>
+</div>
+
+<div class="seller-result" id="seller-result"></div>
+
+<button class="find-seller-button">
+    Find Seller & Continue
+</button>
+<!-- =========================================
+     PAYMENT SECTION
+========================================= -->
+
+<div class="checkout-card payment-card" id="payment-section">
+
+    <div class="checkout-card-header">
+        <span class="checkout-step">4</span>
+
+        <div>
+            <h2>Payment method</h2>
+            <p>Choose how you'd like to pay for your order.</p>
+        </div>
+    </div>
+
+
+    <div class="confirmed-seller">
+
+        <span class="confirmed-icon">✓</span>
+
+        <div>
+            <strong>Seller confirmed</strong>
+            <p><span id="confirmed-seller-name"></span> will fulfil your order.</p>
+        </div>
+
+    </div>
+
+
+    <div class="payment-options">
+
+        <label class="payment-option">
+
+            <input
+                type="radio"
+                name="payment"
+                value="online"
+                checked
+            >
+
+            <div class="payment-option-content">
+
+                <strong>💳 Online Payment</strong>
+
+                <span>
+                    Pay securely online using available payment methods.
+                </span>
+
+            </div>
+
+        </label>
+
+
+        <label class="payment-option" id="cod-option">
+
+            <input
+                type="radio"
+                name="payment"
+                value="cod"
+            >
+
+            <div class="payment-option-content">
+
+                <strong>💵 Cash on Delivery</strong>
+
+                <span>
+                    Pay the seller when your order is delivered.
+                </span>
+
+            </div>
+
+        </label>
+
+    </div>
+
+
+    <button class="place-order-button">
+        Continue to Payment
+    </button>
+
+</div>
+                
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- RIGHT SIDE -->
+                <aside class="checkout-summary">
+
+                    <h2>Order Summary</h2>
+
+
+                    <div class="checkout-products">
+                        <!-- JavaScript will add products here -->
+                    </div>
+
+
+                    <div class="summary-divider"></div>
+
+
+                    <div class="summary-row">
+
+                        <span>Subtotal</span>
+
+                        <strong>₹0</strong>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>Delivery</span>
+
+                        <strong>₹40</strong>
+
+                    </div>
+
+
+                    <div class="summary-divider"></div>
+
+
+                    <div class="summary-total">
+
+                        <span>Total</span>
+
+                        <strong>₹0</strong>
+
+                    </div>
+
+
+                    <div class="checkout-delivery-note">
+
+                        ⚡ Fast local delivery
+
+                        <span>
+                            Usually within 1–2 hours
+                        </span>
+
+                    </div>
+
+                </aside>
+
+
+            </div>
+
+        </div>
+
+    </section>
+   <!-- =========================================
+     ORDER CONFIRMATION
+========================================= -->
+
+<section class="order-confirmation" id="order-confirmation">
+
+    <div class="confirmation-icon">
+        ✓
+    </div>
+
+    <span class="section-label">
+        ORDER CONFIRMED
+    </span>
+
+    <h1>You're all set!</h1>
+
+    <p class="confirmation-message">
+        Your order has been confirmed and is being prepared by your local seller.
+    </p>
+
+    <div class="order-details">
+
+        <div class="order-detail-row">
+            <span>Order ID</span>
+            <strong id="order-id">NZ000000</strong>
+        </div>
+
+        <div class="order-detail-row">
+            <span>Seller</span>
+                    <strong id="confirmation-seller-name"></strong>
+        </div>
+
+        <div class="order-detail-row">
+            <span>Delivery</span>
+            <strong>35–50 min</strong>
+        </div>
+
+        <div class="order-detail-row">
+            <span>Payment</span>
+            <strong id="confirmation-payment">
+                Online Payment
+            </strong>
+        </div>
+
+        <div class="order-detail-row">
+            <span>Status</span>
+            <strong id="confirmation-status">
+                Pending
+            </strong>
+        </div>
+
+        <div class="order-detail-row order-total-row">
+            <span>Total</span>
+            <strong id="confirmation-total">
+                ₹0
+            </strong>
+        </div>
+
+    </div>
+
+    <a href="../index.html" class="continue-shopping-button">
+        Continue Shopping
+    </a>
+
+</section>
+</main>
+
+
+<script src="../businesses.js"></script>
+<script src="../availability.js"></script>
+<script src="../script.js"></script>
+<script src="checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | Nearza</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">N</span>
+                <span class="logo-text">Nearza</span>
+            </a>
+
+            <div class="search-container">
+                <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Search for products..."
+                >
+
+                <button class="search-button">🔍</button>
+            </div>
+
+            <a href="cart.html" class="cart-button">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-text">Cart</span>
+                <span class="cart-count">0</span>
+            </a>
+
+            <a href="orders.html" class="orders-link">
+                Orders
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- PRODUCTS PAGE -->
+
+    <main class="products-page">
+
+        <div class="products-page-header">
+
+            <div>
+                <p class="section-label">NEARZA MARKETPLACE</p>
+
+                <h1>Products</h1>
+
+                <p id="search-message">
+                    Explore products available near you.
+                </p>
+            </div>
+
+        </div>
+
+        <section class="business-discovery business-discovery-compact" aria-labelledby="catalog-businesses-title">
+
+            <div class="section-header">
+
+                <div>
+                    <span class="section-label">SHOP LOCALLY</span>
+
+                    <h2 id="catalog-businesses-title">Shop by Business</h2>
+
+                    <p class="section-description">
+                        Explore products from trusted businesses near you.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="business-grid" id="catalog-businesses"></div>
+
+        </section>
+
+          <div class="products-toolbar">
+
+    <div class="products-count" id="products-count">
+        0 products
+    </div>
+
+    <select id="sort-products" class="sort-select">
+
+        <option value="recommended">
+            Recommended
+        </option>
+
+        <option value="price-low">
+            Price: Low to High
+        </option>
+
+        <option value="price-high">
+            Price: High to Low
+        </option>
+
+        <option value="name">
+            Name: A–Z
+        </option>
+
+    </select>
+
+</div>
+
+
+<div
+    class="product-grid"
+    id="products-container">
+</div>
+
+    </main>
+
+
+    <script src="../businesses.js"></script>
+    <script src="../availability.js"></script>
+    <script src="../script.js"></script>
+
+</body>
+
+</html>

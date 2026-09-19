@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details | Nearza</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">N</span>
+                <span class="logo-text">Nearza</span>
+            </a>
+
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for products...">
+                <button class="search-button">🔍</button>
+            </div>
+
+            <a href="cart.html" class="cart-button">
+                <span class="cart-icon">🛒</span>
+                <span class="cart-text">Cart</span>
+                <span class="cart-count">0</span>
+            </a>
+
+            <a href="orders.html" class="orders-link">Orders</a>
+        </div>
+    </header>
+
+    <main class="order-page">
+        <div class="order-header">
+            <span class="section-label">ORDER DETAILS</span>
+            <h1>Order Overview</h1>
+        </div>
+
+        <div id="order-page-content"></div>
+    </main>
+
+    <script src="../businesses.js"></script>
+    <script src="../availability.js"></script>
+    <script src="../script.js"></script>
+    <script src="order.js"></script>
+</body>
+</html>
